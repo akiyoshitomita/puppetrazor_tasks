@@ -1,0 +1,6 @@
+---
+
+os_version: bionic
+label: Ubuntu bionic 18.04
+description: Ubuntu bionic (18.04) 日本語インストーラー
+base: ubuntu
