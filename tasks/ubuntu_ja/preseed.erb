@@ -50,6 +50,7 @@ d-i pkgsel/install-language-support boolean true
 d-i grub-installer/only_debian boolean true
 d-i grub-installer/with_other_os boolean true
 d-i finish-install/reboot_in_progress note
+<% if node.metadata['enable_serialconsole'] == 'true' %>d-i debian-installer/add-kernel-opts console=tty0 console=ttyS0,9600<% end %>
 # Uncomment this for `nomodeset`.
 # d-i debian-installer/add-kernel-opts string nomodeset
 # Our callbacks
